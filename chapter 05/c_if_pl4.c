@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <sring.h>
+#include <string.h>
 
 /**
  * BMI 계산기
@@ -16,9 +16,9 @@ int main(void) {
     int weight // 몸무게(kg)
 
     printf("신장(cm) 입력: ");
-    scanf("%d", &height);
+    scanf("%d", & height);
     printf("체중(kg) 입력: ");
-    scanf("%d", &weight);
+    scanf("%d", & weight);
     //printf("%d, %d", height, weight);
 
     // 2.변환(신장cm → m)
@@ -55,10 +55,6 @@ int main(void) {
     // 5.출력
     printf("신장%dcm, 몸무게 %dkg으로 \n", height, weight);
     printf("당신의 BMI지수는 %.2lf로 %s입니다.", bmi_value, bmi_degree);
-    
-    
-    
-
     
     
 }
