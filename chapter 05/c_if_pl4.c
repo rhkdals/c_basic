@@ -10,7 +10,7 @@
  *  5.출력: BMI 결과
 */
 
-int main(void) {
+int main(void){
     // 1.입력
     int height // 신장(cm)
     int weight // 몸무게(kg)
@@ -39,15 +39,20 @@ int main(void) {
 
     char bmi_degree[20];
 
-    if(bmi_value < 18.5) {
+    if(bmi_value < 18.5)
+    {
         strcpy(bmi_degree, "저체중");
-    } else if (bmi_value >= 18.5 && bmi_value < 23) {
+    } else if (bmi_value >= 18.5 && bmi_value < 23)
+    {
         strcpy(bmi_degree, "정상");
-    } else if (bmi_value >= 23 && bmi_value < 26) {
+    } else if (bmi_value >= 23 && bmi_value < 26)
+    {
         strcpy(bmi_degree, "과체중");
-    } else if (bmi_value >= 26 && bmi_value < 30) {
+    } else if (bmi_value >= 26 && bmi_value < 30)
+    {
         strcpy(bmi_degree, "비만")
-    } else if (bmi_value >= 30) {
+    } else if (bmi_value >= 30) 
+    {
         strcpy(bmi_degree, "고도비만");
     }
     
@@ -55,6 +60,4 @@ int main(void) {
     // 5.출력
     printf("신장%dcm, 몸무게 %dkg으로 \n", height, weight);
     printf("당신의 BMI지수는 %.2lf로 %s입니다.", bmi_value, bmi_degree);
-    
-    
-}
+    }
